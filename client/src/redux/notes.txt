@@ -1,0 +1,21 @@
+import posts from "./reducers/posts"
+
+**************** REDUX **************
+
+index.js Men jo createStore(combinedReducers, middleware) iska mtlb ha k bhai
+ye lo tmam states(combinedReducers) or yelo middleware inka store bnado
+
+Ub ajao combinedReducers men : Yhan tmam states likhin hoi jin namon se unko access krna ha
+or btaya ha k flaan state flaani file se config horhi or flaan state flani file
+vese simple syntax to ye hoona chahye 
+
+combinedReducers{
+    postsState : posts
+}
+
+jbke posts = import posts from reducers/posts
+
+reducers obviiosly ek state leta ha or ek data (action men action.payload) or data ko state 
+men dalta ha according to action.type
+
+action ko hm call krte hen Dispatch k zrye k bhai flan kaam kr flaan kr
