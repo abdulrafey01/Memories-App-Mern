@@ -27,4 +27,7 @@ mongoose.connect(CONNECTION_URL)
     console.log(error.message)
 })
 
+app.get('/', (req,res)=>{
+    res.json('This is Memories Project')
+})
 app.use('/posts', postRoutes)
